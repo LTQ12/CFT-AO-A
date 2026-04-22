@@ -33,8 +33,6 @@ paper_preparation/plot_violation_max_ecdf.py
 paper_preparation/profile_costs_2d.py
 paper_preparation/run_pflow_fairness_ablation.py
 requirements.txt
-the_third_paper/eval_cftaoA_geomatlas_ood.py
-the_third_paper/plot_multiobstacle_ood_samples.py
 train_cftaoA_diff2d_multiobstacle.py
 train_cftaoA_diff2d_obstacle.py
 train_cftaoA_pflow2d_obstacle.py

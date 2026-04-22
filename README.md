@@ -13,7 +13,6 @@ This repository was extracted from a larger research workspace and keeps only th
 - Training scripts for `CFT-AO+A`, `FNO+A`, `U-NO+A`, and plain `FNO`
 - Evaluation, aggregation, profiling, and plotting scripts under `paper_preparation/`
 - Data generation scripts for the obstacle/diffusion/potential-flow tasks under `data_generation/`
-- OOD geometry-atlas utilities under `the_third_paper/`
 
 ## What is intentionally excluded
 
@@ -52,7 +51,6 @@ python paper_preparation/profile_costs_2d.py --help
 - Root directory: core models, wrappers, and training scripts
 - `data_generation/`: data generation scripts for the main 2D tasks
 - `paper_preparation/`: evaluation, aggregation, profiling, and plotting utilities
-- `the_third_paper/`: supplementary OOD geometry-atlas scripts
 
 ## Data and checkpoints
 
