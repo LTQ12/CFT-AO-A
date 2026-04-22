@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Virtual env
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+._*
+
+# Generated data and checkpoints
+data/
+models/
+pred/
+results/
+tmp/
+tmp_*/
+
+# Large artifacts
+*.pt
+*.pth
+*.ckpt
+*.mat
+*.npz
+*.npy
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.zip
+*.tar
+*.tar.gz
+
+# Logs
+*.log
