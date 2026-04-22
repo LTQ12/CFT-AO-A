@@ -7,10 +7,10 @@ This note collects the exact commands for the pre-submission strengthening pass:
 3. multi-seed aggregation for ID/OOD tables,
 4. one extra open-source baseline probe (`U-NO + A`) on the diffusion benchmark.
 
-All commands assume the project root is:
+All commands assume you run from the repository root:
 
 ```bash
-/Users/liutaiqian/Downloads/fourier_neural_operator-master
+path/to/CFT-AO-A
 ```
 
 ## 1. Reference-solver audits

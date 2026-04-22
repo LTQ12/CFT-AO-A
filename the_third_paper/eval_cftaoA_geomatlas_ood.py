@@ -10,9 +10,15 @@ Evaluate FNO vs geometry-atlas CFT-AO+A on geometric OOD multi-obstacle diffusio
 """
 
 import argparse
+import sys
+from pathlib import Path
 
 import torch
 import torch.nn.functional as F
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 from boundary_ext_residual_2d import ResidualOnDirichletExtension2D
 from cft_ao_2d import CFT_AO_2D_Atlas
@@ -263,25 +269,25 @@ def main():
     p.add_argument(
         "--data_path_train",
         type=str,
-        default="/content/drive/MyDrive/diffusion_multiobstacle2d_N128.pt",
+        default="data/diffusion_multiobstacle2d_N128.pt",
         help="In-distribution training dataset (.pt).",
     )
     p.add_argument(
         "--data_path_ood",
         type=str,
-        default="/content/drive/MyDrive/diffusion_multiobstacle2d_ood_N64.pt",
+        default="data/diffusion_multiobstacle2d_ood_N64.pt",
         help="Geometric OOD dataset (.pt).",
     )
     p.add_argument(
         "--fno_model",
         type=str,
-        default="/content/drive/MyDrive/fno_diff2d_multiobs_best.pt",
+        default="models/fno_diff2d_multiobs_best.pt",
         help="Checkpoint of FNO baseline.",
     )
     p.add_argument(
         "--cft_model",
         type=str,
-        default="/content/cftaoA_geomaware_multiobstacle.pt",
+        default="models/cftaoA_geomaware_multiobstacle.pt",
         help="Checkpoint of geometry-atlas CFT-AO+A.",
     )
     p.add_argument("--batch_size", type=int, default=8)
