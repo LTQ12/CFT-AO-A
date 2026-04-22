@@ -20,16 +20,10 @@ paper_preparation/aggregate_multiseed_metrics.py
 paper_preparation/analyze_pflow_eonly_ood.py
 paper_preparation/audit_reference_jacobi_convergence.py
 paper_preparation/compare_A_diff2d_errors_pair.py
-paper_preparation/compare_three_models.py
 paper_preparation/eval_A_models_2d.py
 paper_preparation/eval_pflow_A_models.py
 paper_preparation/eval_plain_fno2d.py
 paper_preparation/format_metrics_table_ood.py
-paper_preparation/plot_field_errors_2d.py
-paper_preparation/plot_pareto_penalty.py
-paper_preparation/plot_violation_heatmap.py
-paper_preparation/plot_violation_heatmap_batch.py
-paper_preparation/plot_violation_max_ecdf.py
 paper_preparation/profile_costs_2d.py
 paper_preparation/run_pflow_fairness_ablation.py
 requirements.txt
